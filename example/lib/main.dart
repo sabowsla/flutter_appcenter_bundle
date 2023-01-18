@@ -47,10 +47,8 @@ class _MyAppState extends State<MyApp> {
                 builder: (_, AsyncSnapshot<bool?> snapshot) {
                   if (snapshot.hasData) {
                     final isCrashesEnabled = snapshot.data!;
-
                     return Text('IsCrashesEnabled: $isCrashesEnabled');
                   }
-
                   return const CircularProgressIndicator.adaptive();
                 },
               ),
